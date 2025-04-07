@@ -1,0 +1,532 @@
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(11, 11, 11, 0.5); /* Cor #0B0B0B com 50% de transparência */
+    position: fixed; /* Fixa o header no topo */
+    top: 0; /* Garante que o header esteja no topo da tela */
+    left: 0; /* Garante que o header comece na borda esquerda da tela */
+    width: 100%; /* Garante que o header ocupe toda a largura da tela */
+    z-index: 100; /* Garante que o header fique sobre outros elementos */
+}
+.menu-button {
+    padding: 8px 8px;
+    margin-right: 7.5em;
+    background: #CABE96;
+    color: #151411;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.agencia-cx-button{
+    padding: 21px 33px;
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 2px solid #CABE96;
+    border-radius: 33px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.logo {
+    margin-left: 70px;
+}
+
+.section1 {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5em;
+}
+
+.section1 .content {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section1 .left {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 .left img {
+    width: 60%;
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da div */
+    max-height: 100%; /* Garante que a imagem não ultrapasse a altura da div */
+    border-radius: 9px;
+}
+
+.section1 .right {
+    padding: 12px 24px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Garante que a div .right ocupe toda a altura disponível */
+}
+
+.section1 .top {
+    margin-bottom: 20px;
+}
+
+.section1 .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section1 .top,
+.section1 .bottom {
+    flex-grow: 1; /* Faz com que as divs cresçam igualmente */
+    height: 50%;
+    
+}
+
+.section1 .card-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.section1 .card {
+    
+    width: 300px;
+    height: 70px;
+    border: 1px solid #767676;
+    border-radius: 8px;
+    margin-bottom: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #0A0A0A;
+}
+.section1 .card:hover {
+    border: 1px solid #dbcea3;
+    color: #f7f7f7;
+    background-color: #1a1a1a;
+}
+
+.section1 .card4 {
+    margin: 0;
+    width: 300px;
+    height: 70px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CABE96;
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.section1 .card4:hover {
+    background-color: #B2A687; /* Escurece a cor de fundo no hover */
+}
+
+.plano-start-link {
+    color: #151411;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0;
+    transition: color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.section2 {
+    background-color: #0A0A0A;
+    padding: 100px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section2 .twitter-post {
+    width: 500px;
+    display: flex;
+    align-items: flex-start;
+    border: none;
+    border-radius: 9px;
+    padding: 60px 50px;
+    background-color: #161616;
+}
+
+.nic-name{
+    font-size: 15px;
+    color: #585858;
+
+}
+
+.section2 .profile-pic {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+
+.section2 .post-content {
+    flex: 1;
+}
+
+.section2 .post-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    margin-bottom: 10px;
+}
+
+.tres-pontos {
+    display: flex;
+    align-items: center;
+}
+
+.texto-post{
+    width: 100%;
+    
+}
+.tres-pontos{
+    color: #FFFFFF;
+}
+
+.section2 .post-button {
+    font-size: 21px;
+    width: 100%;
+    background-color: #CABE96;
+    color: #10100d;
+    border-radius: 8px;
+    padding: 21px 27px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+}
+
+.section3-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:8em;
+    align-items: center;
+}
+
+.section3 .section3-left {
+    width: 50%;
+}
+
+.section3 .feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section3 .feature-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    background-color: #413D30;
+}
+
+.section3 .section3-right {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 .section3-right img {
+    width: 80%;
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da div */
+    max-height: 100%; /* Garante que a imagem não ultrapasse a altura da div */
+    border-radius: 9px;
+}
+
+.flex-section {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: space-around; /* Distribui o espaço entre os itens */
+    width: 80%; /* Define a largura da div principal */
+    max-width: 1200px; /* Define a largura máxima */
+    padding: 20px;
+    background-color: var(--cor-botao-whatsapp);
+    border-radius: 5px;
+}
+
+.flex-title {
+    color: var(--cor-texto-principal);
+    font-size: 24px;
+}
+
+.flex-paragraph {
+    color: var(--cor-texto-principal);
+    font-size: 16px;
+}
+
+.flex-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--cor-botao-whatsapp);
+    color: var(--cor-texto-botao-whatsapp);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.flex-button:hover {
+    background-color: var(--cor-botao-whatsapp-hover);
+}
+
+/* Para telas de 384px a 767px (mobile) */
+@media (max-width: 767px) {
+    /* Header */
+    header {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo {
+        margin-left: 10px;
+        margin-bottom: 10px;
+        width: 80%; /* Ajuste para telas pequenas */
+    }
+
+    .menu-button {
+        margin-right: 24px;
+        margin-top: 10px;
+        padding: 12px 70px;
+        font-size: 14px;
+    }
+
+    /* Section 1 */
+    .section1 {
+        padding-top: 2em;
+        height: auto; /* Altura automática para se adaptar ao conteúdo */
+    }
+    .agencia-cx-button{
+       display: none;
+    }
+    
+
+    .section1 .content {
+        flex-direction: column;
+        width: 100%;
+        padding: 6px;
+        margin-top: 3em;
+    }
+
+    .section1 .left, .section1 .right {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .section1 .left img {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .section1 .right .top, .section1 .right .bottom {
+        height: auto; /* Altura automática para se adaptar ao conteúdo */
+    }
+
+    .section1 .card-column {
+        width: 100%;
+    }
+
+    .section1 .card, .section1 .card4 {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    /* Section 2 */
+    .section2 {
+        padding: 20px;
+    }
+
+    .section2 .twitter-post {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .section2 .post-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section2 .profile-pic {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .section2 .post-content p {
+        font-size: 14px;
+    }
+
+    .section2 .post-button {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    /* Section 3 */
+    .section3 {
+        padding: 20px;
+    }
+
+    .section3 .section3-content {
+        flex-direction: column;
+    }
+
+    .section3 .section3-left, .section3 .section3-right {
+        width: 100%;
+    }
+
+    .section3 .section3-right img {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    /* Flex Section */
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 95%;
+    }
+
+    .flex-title, .flex-paragraph, .flex-button {
+        margin-bottom: 15px;
+        width: 100%; /* Ocupar toda a largura disponível */
+        box-sizing: border-box; /* Incluir padding e borda na largura */
+    }
+}
+
+/* Para telas de 768px a 1023px (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .section1 .content {
+        width: 100%;
+        margin-top: 10em; 
+    }
+    .section1 .left img {
+        display: none;
+    }
+    .card,  .card4 {
+        width: 150px;
+        margin-bottom: 10px; 
+        margin-right: 1em;
+    }
+
+    .menu-button {
+        margin-right: 39px;
+        margin-top: 10px;
+        padding: 12px 70px;
+        font-size: 14px;
+    }
+
+    .section2 .twitter-post {
+        width: 100%;
+        margin-top: 6em;
+    }
+
+    .section3 .section3-content {
+        width: 90%;
+    }
+
+    .flex-container {
+        width: 90%;
+    }
+}
+
+/* Para telas de 1024px a 1439px (desktops pequenos) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .section1 .content {
+        width: 80%;
+        margin-top: 10em; 
+    }
+    .section1 .left img {
+        display: block;
+        width: 100%;
+        margin-left: 3em;
+    }
+    .card, .card4 {
+        width: 150px;
+        margin-bottom: 10px; 
+        margin-right: 1em;
+    }
+    .menu-button {
+        margin-right: 69px;
+        margin-top: 10px;
+        padding: 12px 36px;
+        font-size: 14px;
+    }
+
+    .twitter-post {
+        width: 40%;
+        margin-top: 6em;
+    }
+
+    .section3 .section3-content {
+        width: 90%;
+    }
+
+    .flex-container {
+        width: 90%;
+    }
+}
+
+/* Para telas de 1440px a 1919px (desktops médios) */
+@media (min-width: 1440px) and (max-width: 1919px) {
+    .section1 .content, .section2, .section3 .section3-content, .flex-container {
+        width: 80%;
+    }
+    .twitter-post {
+        width: 40%;
+        margin-top: 6em;
+    }
+}
+
+/* Para telas de 1920px a 3957px (desktops grandes) */
+@media (min-width: 1920px) {
+    .section1 .content, .section2 .twitter-post, .section3 .section3-content, .flex-container {
+        width: 70%;
+        max-width: 1600px;
+    }
+}
