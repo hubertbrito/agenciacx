@@ -6,76 +6,99 @@ body {
 }
 
 header {
+    display: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 0px 20px;
     background-color: rgba(11, 11, 11, 0.5); /* Cor #0B0B0B com 50% de transparência */
     position: fixed; /* Fixa o header no topo */
     top: 0; /* Garante que o header esteja no topo da tela */
     left: 0; /* Garante que o header comece na borda esquerda da tela */
     width: 100%; /* Garante que o header ocupe toda a largura da tela */
-    z-index: 100; /* Garante que o header fique sobre outros elementos */
+   
 }
-.menu-button {
-    padding: 8px 8px;
-    margin-right: 7.5em;
-    background: #CABE96;
-    color: #151411;
-    border: none;
-    border-radius: 8px;
-    font-size: 14px;
-    cursor: pointer;
-    font-weight: 500;
+.flex-icon{
+    display: flex;
+    margin-right: 7rem;
+    gap: 1rem;
+
+}
+
+.feature-icon.icon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 9px;
+    background-color: #B2A687; /* Cor de fundo combinada */
+    color: #060606; /* Cor do ícone */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.feature-icon.icon a ion-icon {
+    font-size: 24px; /* Tamanho do ícone */
+}
+
+.feature-icon.icon a:hover {
+    background-color: #5A5545; /* Cor de fundo no hover */
 }
 
 .agencia-cx-button{
-    padding: 21px 33px;
+    padding: 18px 27px;
     background-color: transparent;
     color: #FFFFFF;
     border: 2px solid #CABE96;
     border-radius: 33px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
 }
 
 .logo {
-    margin-left: 70px;
+    margin-left: 48px;
+    width: 80px;
 }
+
+
 
 .section1 {
     width: 100%;
-    height: 85vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 5em;
+    padding: 0.1rem ;
+    
 }
 
 .section1 .content {
     width: 80%;
+    margin-bottom: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1px;
 }
 
 .section1 .left {
     width: 50%;
-    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.section1 .left img {
-    width: 60%;
+.section1 img {
+    width: 90%;
     max-width: 100%; /* Garante que a imagem não ultrapasse a largura da div */
     max-height: 100%; /* Garante que a imagem não ultrapasse a altura da div */
     border-radius: 9px;
+    
 }
 
 .section1 .right {
-    padding: 12px 24px;
+    padding: 1px 2px;
+    margin-bottom: 2rem;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -84,7 +107,10 @@ header {
 }
 
 .section1 .top {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+.top p{
+    font-size: 16px;
 }
 
 .section1 .bottom {
@@ -100,17 +126,19 @@ header {
 }
 
 .section1 .card-column {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1em;
+    gap: 1rem;
 }
 
 .section1 .card {
     
-    width: 300px;
-    height: 70px;
+    width: 94%;
+    padding: 2px;
+    height: 50px;
     border: 1px solid #767676;
     border-radius: 8px;
     margin-bottom: 21px;
@@ -127,12 +155,12 @@ header {
 }
 
 .section1 .card4 {
-    margin: 0;
-    width: 300px;
-    height: 70px;
+    margin-bottom: 0.5rem;
+    width: 94%;
+    height: 56px;
     border: none;
     border-radius: 8px;
-    margin-bottom: 21px;
+    margin-bottom: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,7 +191,7 @@ header {
 
 
 .section2 .twitter-post {
-    width: 500px;
+    width: 400px;
     display: flex;
     align-items: flex-start;
     border: none;
@@ -201,6 +229,7 @@ header {
 .tres-pontos {
     display: flex;
     align-items: center;
+    
 }
 
 .texto-post{
@@ -211,10 +240,10 @@ header {
     color: #FFFFFF;
 }
 
-.section2 .post-button {
+.post-button {
     font-size: 21px;
     width: 100%;
-    background-color: #CABE96;
+    background-color: #B2A687;
     color: #10100d;
     border-radius: 8px;
     padding: 21px 27px;
@@ -274,60 +303,145 @@ header {
 }
 
 .flex-section {
-    display: flex;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    
+    width: 100%;
     padding: 20px;
+    background-color: #0A0A0A;
 }
 
 .flex-container {
+    padding: 80px 12px;
     display: flex;
-    align-items: center; /* Alinha os itens verticalmente */
-    justify-content: space-around; /* Distribui o espaço entre os itens */
-    width: 80%; /* Define a largura da div principal */
-    max-width: 1200px; /* Define a largura máxima */
-    padding: 20px;
-    background-color: var(--cor-botao-whatsapp);
-    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100%px;
+    margin: 0 auto;
+}
+
+.flex-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%; /* Divide igualmente em três colunas */
 }
 
 .flex-title {
-    color: var(--cor-texto-principal);
     font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .flex-paragraph {
-    color: var(--cor-texto-principal);
     font-size: 16px;
+    line-height: 1.6;
 }
 
-.flex-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--cor-botao-whatsapp);
-    color: var(--cor-texto-botao-whatsapp);
-    text-decoration: none;
+.post-button {
+    background-color: #B2A687;
+    color: #10100d;
+    padding: 15px 25px;
+    border: none;
     border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    font-size: 18px;
+    cursor: pointer;
 }
 
-.flex-button:hover {
-    background-color: var(--cor-botao-whatsapp-hover);
+.post-button:hover {
+    background-color: #5A5545;
+}
+.destaque{
+    color: #B2A687;
 }
 
+footer {
+    background-color: #000000;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right {
+    display: flex;
+}
+
+.footer-right .feature-icon.icon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 9px;
+    background-color: #413D30;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.footer-right .feature-icon.icon a ion-icon {
+    font-size: 24px;
+}
+
+.footer-right .feature-icon.icon a:hover {
+    background-color: #5A5545;
+}
+
+/* Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-right {
+        margin-top: 10px;
+    }
+}
+
+/* Responsividade para telas menores que 980px */
+@media (max-width: 980px) {
+    .flex-container {
+        flex-direction: column; /* Alinha os itens em coluna */
+    }
+
+    .flex-item {
+        width: 100%; /* Ocupa toda a largura */
+        margin-bottom: 20px; /* Adiciona espaço entre os itens */
+    }
+}
 /* Para telas de 384px a 767px (mobile) */
 @media (max-width: 767px) {
     /* Header */
     header {
         flex-direction: row;
         align-items: center;
-        padding: 10px;
+        justify-content: space-between;
+        padding: 12px 10px;
+        position: static;
     }
 
     .logo {
-        margin-left: 10px;
-        margin-bottom: 10px;
-        width: 80%; /* Ajuste para telas pequenas */
+        margin-left: 24px;
+        margin-bottom: 0px;
+        margin-top: 6;
+        width: 50px; /* Ajuste para telas pequenas */
+    }
+    .flex-icon{
+        display: flex;
+        margin-right: 1rem;
+        margin-top: 4;
+        gap: 1rem;
+    
     }
 
     .menu-button {
@@ -343,7 +457,7 @@ header {
         height: auto; /* Altura automática para se adaptar ao conteúdo */
     }
     .agencia-cx-button{
-       display: none;
+       display: block;
     }
     
 
@@ -369,7 +483,7 @@ header {
     }
 
     .section1 .card-column {
-        width: 100%;
+        width: 90%;
     }
 
     .section1 .card, .section1 .card4 {
@@ -388,13 +502,17 @@ header {
     }
 
     .section2 .post-header {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
     }
 
     .section2 .profile-pic {
         margin-right: 0;
         margin-bottom: 10px;
+    }
+    .profile-name{
+        margin-right: 1rem;
     }
 
     .section2 .post-content p {
@@ -437,6 +555,26 @@ header {
         width: 100%; /* Ocupar toda a largura disponível */
         box-sizing: border-box; /* Incluir padding e borda na largura */
     }
+    .footer-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer-right {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        display: none;
+
+    }
+    .footer-container{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
 }
 
 /* Para telas de 768px a 1023px (tablets) */
@@ -445,11 +583,9 @@ header {
         width: 100%;
         margin-top: 10em; 
     }
-    .section1 .left img {
-        display: none;
-    }
+    
     .card,  .card4 {
-        width: 150px;
+        width: 250px;
         margin-bottom: 10px; 
         margin-right: 1em;
     }
@@ -475,58 +611,51 @@ header {
     }
 }
 
-/* Para telas de 1024px a 1439px (desktops pequenos) */
-@media (min-width: 1024px) and (max-width: 1439px) {
-    .section1 .content {
-        width: 80%;
-        margin-top: 10em; 
-    }
-    .section1 .left img {
-        display: block;
-        width: 100%;
-        margin-left: 3em;
-    }
-    .card, .card4 {
-        width: 150px;
-        margin-bottom: 10px; 
-        margin-right: 1em;
-    }
-    .menu-button {
-        margin-right: 69px;
-        margin-top: 10px;
-        padding: 12px 36px;
-        font-size: 14px;
-    }
 
-    .twitter-post {
-        width: 40%;
-        margin-top: 6em;
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .section1-left img {
+      /* Novos estilos para notebooks de tamanho médio */
+      max-width: 86%; /* Ajuste a largura da imagem */
+      height: auto;
+      display: block;
+      margin: 0 auto; /* Centraliza a imagem horizontalmente */
     }
-
-    .section3 .section3-content {
-        width: 90%;
-    }
-
-    .flex-container {
-        width: 90%;
-    }
-}
-
-/* Para telas de 1440px a 1919px (desktops médios) */
-@media (min-width: 1440px) and (max-width: 1919px) {
-    .section1 .content, .section2, .section3 .section3-content, .flex-container {
-        width: 80%;
-    }
-    .twitter-post {
-        width: 40%;
-        margin-top: 6em;
-    }
-}
+    .section1 {
+        margin-top: 7rem; /* Escolha um valor entre 6 e 8 rem */
+      }
+  }
 
 /* Para telas de 1920px a 3957px (desktops grandes) */
 @media (min-width: 1920px) {
-    .section1 .content, .section2 .twitter-post, .section3 .section3-content, .flex-container {
-        width: 70%;
-        max-width: 1600px;
+    .section1{
+        height: 90vh;
+    }
+    .section1 .right {
+      
+        margin-bottom: 0rem;
+       
+    }
+    .section1 .content {
+        
+        margin-bottom: 1rem;
+       
+    }
+    
+    
+     .content, .twitter-post, .section3 .section3-content, .flex-container {
+        width: 80%;
+        max-width: 1400px;
+    }
+    .section1 .left img {
+        width: 80%;
+        max-width: 100%;
+        margin-left: 4rem;
+        margin-top: 5.5rem;
+        z-index: 10;
+    }
+    .card, .card4 {
+        width: 600px;
+        margin-bottom: 10px; 
+        margin-right: 1rem;
     }
 }
